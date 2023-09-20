@@ -70,6 +70,12 @@
                                             id="exampleRepeatPassword"  name="confirmpass" placeholder="Repeat Password">
                                     </div>
                                 </div>
+                                <div class="form-group">
+                                    <div class="custom-control custom-checkbox small">
+                                        <input type="checkbox" class="custom-control-input" name="registerDoctor" id="customCheck">
+                                        <label class="custom-control-label" for="customCheck">Register as Doctor</label>
+                                    </div>
+                                </div>
                                 <input type="submit" class="btn btn-warning btn-user btn-block" value="Register Account">
                                                   
                                 <a href="{{route('google-login')}}" class="btn btn-google btn-user btn-block">

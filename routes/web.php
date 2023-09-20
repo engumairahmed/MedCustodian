@@ -52,6 +52,7 @@ Route::controller(AuthController::class)->middleware(['web'])->group(function(){
     Route::get('/email/notice','notice')->name('verification.notice');
     Route::get('/email','email')->name('emails.verification');
     Route::get('/account-activation','activation')->name('activation.request');
+    Route::get('/doctor-verification','docVerification')->name('verification.doctor');
 });
 
 //  -------Patient Routes-------
@@ -60,11 +61,12 @@ Route::middleware(['active','auth','patient','verified'])->group(function(){
 
     Route::controller(PatientController::class)->group(function(){        
         
+        
         Route::prefix('/patient')->group(function(){
             
             Route::get('/','home')->name('patient.home');
             
-            Route::get('/prescriptions/create','prescription')->name('prescriptions');    
+            Route::get('/prescriptions/create','prescription')->name('patient.prescriptions');    
             Route::post('/prescriptions','newPlan');
     
             Route::get('/account/profile','profile')->name('patient.profile');

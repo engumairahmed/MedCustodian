@@ -18,8 +18,8 @@
         rel="stylesheet">
 
     <!-- Downloaded jQuery-->
-
     <script src="{{asset("/js/jQuery/jQuery.js")}}"></script>
+
     <!-- CDN jQuery UI-->
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
@@ -28,8 +28,8 @@
     <!-- Custom styles for this template-->
     <link href="{{asset("/css/sb-admin-2.min.css")}}" rel="stylesheet">
 
-        <!-- Add the Select2 CSS -->
-<link href="{{ asset("/css/select2.min.css") }}" rel="stylesheet" />
+    <!-- Add the Select2 CSS -->
+    <link href="{{ asset("/css/select2.min.css") }}" rel="stylesheet" />
 
 </head>
 
@@ -76,7 +76,7 @@
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="{{route('prescriptions')}}">Create Prescription Plan</a>
+                        <a class="collapse-item" href="{{route('patient.prescriptions')}}">Create Prescription Plan</a>
                         <a class="collapse-item" href="{{route('history')}}">View Prescriptions</a>
                     </div>
                 </div>
